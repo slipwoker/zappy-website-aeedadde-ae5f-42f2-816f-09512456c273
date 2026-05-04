@@ -245,6 +245,322 @@
     <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
     <!-- Mickidum Accessibility Toolbar -->
     <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+
+<style data-zappy-section-v2-css="true">
+/* V2 Regenerated Section CSS */
+.index-hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: visible;
+  background-color: #0A0A0A;
+  color: var(--text-light);
+  display: flex;
+  align-items: center;
+  padding-bottom: 80px;
+  direction: rtl;
+}
+
+/* ── Background Image ── */
+.index-hero-section .index-hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0A0A0A;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.75) contrast(1.05) saturate(0.7);
+}
+
+/* ── Scrim Overlay ── */
+.index-hero-section .index-hero-scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background-image:
+    linear-gradient(105deg, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.65) 55%, rgba(0,0,0,0.15) 100%),
+    linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.55) 100%);
+}
+
+/* ── Watermark SVG ── */
+.index-hero-section .index-hero-watermark {
+  position: absolute;
+  top: 6%;
+  inset-inline-end: 4%;
+  width: clamp(220px, 32vw, 480px);
+  height: auto;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 1;
+}
+.index-hero-section .index-hero-watermark svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ── Dot Grid Decoration ── */
+.index-hero-section .index-hero-dots {
+  position: absolute;
+  bottom: 100px;
+  inset-inline-start: 3%;
+  width: 260px;
+  height: 200px;
+  z-index: 2;
+  pointer-events: none;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.06) 1.5px, transparent 1.5px);
+  background-size: 18px 18px;
+  opacity: 1;
+}
+
+/* ── Container ── */
+.index-hero-section .index-hero-container {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 160px 48px 60px;
+}
+
+/* ── Content Block ── */
+.index-hero-section .index-hero-content {
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  text-align: right;
+}
+
+/* ── Label Badge ── */
+.index-hero-section .index-hero-label {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  background: rgba(199, 241, 26, 0.1);
+  border: 1px solid rgba(199, 241, 26, 0.3);
+  border-radius: 100px;
+  padding: 6px 16px 6px 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #C7F11A;
+  text-transform: uppercase;
+  font-family: 'Assistant', 'Rubik Condensed', sans-serif;
+}
+.index-hero-section .index-hero-label-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #C7F11A;
+  flex-shrink: 0;
+  box-shadow: 0 0 8px rgba(199, 241, 26, 0.7);
+  animation: index-hero-pulse 2s ease-in-out infinite;
+}
+@keyframes index-hero-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.3); }
+}
+
+/* ── H1 ── */
+.index-hero-section .index-hero-h1 {
+  font-family: 'Rubik Condensed', 'Assistant', 'Sora', sans-serif;
+  font-size: clamp(2.4rem, 5.5vw, 3.8rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--text-light);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.6);
+}
+.index-hero-section .index-hero-h1-line {
+  display: block;
+}
+.index-hero-section .index-hero-h1-accent {
+  background: linear-gradient(135deg, #C7F11A 0%, #E0FF4F 50%, #a0c800 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: none;
+}
+
+/* ── H3 Subtitle ── */
+.index-hero-section .index-hero-subtitle {
+  font-family: 'Assistant', 'Inter', 'Heebo', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+  line-height: 1.75;
+  color: rgba(245, 247, 250, 0.85);
+  margin: 0;
+  max-width: 600px;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.5);
+}
+
+/* ── Service Tag ── */
+.index-hero-section .index-hero-service-tag {
+  font-family: 'Assistant', 'Inter', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.index-hero-section .index-hero-service-tag::before {
+  content: '';
+  display: inline-block;
+  width: 32px;
+  height: 2px;
+  background: var(--text-muted);
+  flex-shrink: 0;
+  order: 1;
+}
+
+/* ── CTAs ── */
+.index-hero-section .index-hero-ctas {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+.index-hero-section .index-hero-btn-primary {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  background: #C7F11A;
+  color: #0A0A0A;
+  font-family: 'Assistant', 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  padding: 15px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 32px rgba(199, 241, 26, 0.3);
+  letter-spacing: 0.01em;
+}
+.index-hero-section .index-hero-btn-primary:hover {
+  background: #d8ff30;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(199, 241, 26, 0.45);
+  color: #0A0A0A;
+}
+.index-hero-section .index-hero-btn-primary i {
+  font-size: 0.9rem;
+  transition: transform 0.3s ease;
+}
+.index-hero-section .index-hero-btn-primary:hover i {
+  transform: translateX(-4px);
+}
+.index-hero-section .index-hero-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  color: var(--text-light);
+  font-family: 'Assistant', 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 14px 28px;
+  border-radius: 6px;
+  border: 2px solid rgba(245, 247, 250, 0.4);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  letter-spacing: 0.01em;
+}
+.index-hero-section .index-hero-btn-secondary:hover {
+  border-color: #C7F11A;
+  color: #C7F11A;
+  transform: translateY(-3px);
+  background: rgba(199, 241, 26, 0.06);
+}
+
+/* ── Bottom Divider ── */
+.index-hero-section .index-hero-divider-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  pointer-events: none;
+  z-index: 5;
+}
+.index-hero-section .index-hero-divider-wrapper svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .index-hero-section {
+    min-height: 100svh;
+    padding-bottom: 60px;
+  }
+  .index-hero-section .index-hero-container {
+    padding: 120px 20px 50px;
+  }
+  .index-hero-section .index-hero-content {
+    max-width: 100%;
+    gap: 18px;
+  }
+  .index-hero-section .index-hero-h1 {
+    font-size: clamp(2rem, 9vw, 2.8rem);
+  }
+  .index-hero-section .index-hero-subtitle {
+    font-size: 0.95rem;
+    max-width: 100%;
+  }
+  .index-hero-section .index-hero-ctas {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    width: 100%;
+  }
+  .index-hero-section .index-hero-btn-primary,
+  .index-hero-section .index-hero-btn-secondary {
+    justify-content: center;
+    width: 100%;
+    padding: 14px 20px;
+  }
+  .index-hero-section .index-hero-watermark {
+    width: 160px;
+    top: 10%;
+    inset-inline-end: 2%;
+    opacity: 0.7;
+  }
+  .index-hero-section .index-hero-dots {
+    display: none;
+  }
+  .index-hero-section .index-hero-scrim {
+    background-image:
+      linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.85) 100%);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .index-hero-section .index-hero-container {
+    padding: 140px 36px 60px;
+  }
+  .index-hero-section .index-hero-content {
+    max-width: 640px;
+  }
+}
+</style>
     <link rel="stylesheet" href="/styles.css">
 
     <style id="zappy-dropdown-submenu-styles">
@@ -768,60 +1084,55 @@
 </script>
   
   <main>
-    <section class="index-hero-section" data-layout-spec="בית-hero" dir="rtl" data-hero-type="fullscreen-scrim" id="index-hero-section" style="min-height: 987.938px !important;">
+    <section class="index-hero-section" data-layout-spec="בית-hero" dir="rtl" data-hero-type="fullscreen-scrim" data-zappy-section="true" id="index-hero-section">
   <!-- Background Image -->
-  <div class="index-hero-bg">
-    <img data-hero-bg="true" data-placeholder="index-hero-image-1" data-context="Cinematic wide-angle shot of an active industrial metal recycling yard at dusk in Israel. Foreground shows sorted scrap metals, copper wires, aluminum sheets, and electronic circuit boards. Background features industrial vehicles and cranes in motion, dramatic orange sparks from metal cutting, cyan glows reflecting off machinery surfaces. The atmosphere is moody, dramatic, and professional — deep blues and oranges with industrial haze. Photorealistic, high resolution, 16:9 aspect ratio." width="1920" height="1080" src="/assets/site-index-hero-image-1.webp" alt="מתקן מחזור מתכות ופסולת אלקטרונית פעיל בשעת בין ערביים" data-hero-background="true" data-element-type="image" data-element-id="img-1777901216296-acsdh8y45">
-  </div>
+  <div class="index-hero-bg" style="background-image: url('assets/site-index-hero-image-1.webp'); background-size: cover; background-position: center;"></div>
 
   <!-- Scrim Overlay -->
   <div class="index-hero-scrim" aria-hidden="true"></div>
 
-  <!-- Decorative Watermark -->
+  <!-- Decorative: Large faint recycling watermark -->
   <div class="index-hero-watermark" aria-hidden="true">
     <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M100 20 L160 60 L160 140 L100 180 L40 140 L40 60 Z" stroke="#C7F11A" stroke-width="2" fill="none" opacity="0.07"></path>
-      <path d="M100 10 C110 30 130 40 150 35 C145 55 155 75 170 80 C155 90 150 110 160 125 C140 125 125 140 125 160 C110 148 90 148 75 160 C75 140 60 125 40 125 C50 110 45 90 30 80 C45 75 55 55 50 35 C70 40 90 30 100 10Z" stroke="#C7F11A" stroke-width="1.5" fill="none" opacity="0.05"></path>
-      <path d="M100 45 L80 90 L55 90 L75 115 L65 155 L100 133 L135 155 L125 115 L145 90 L120 90 Z" stroke="#C7F11A" stroke-width="1" fill="none" opacity="0.06"></path>
+      <path d="M100 20 L130 70 L110 70 L110 130 L130 130 L100 180 L70 130 L90 130 L90 70 L70 70 Z" stroke="#C7F11A" stroke-width="3" fill="none" opacity="0.07"></path>
+      <path d="M40 110 L15 65 L35 65 Q35 35 65 20 L55 5 L95 25 L60 50 L70 35 Q50 45 50 65 L70 65 Z" stroke="#C7F11A" stroke-width="3" fill="none" opacity="0.07"></path>
+      <path d="M160 110 L185 65 L165 65 Q165 35 135 20 L145 5 L105 25 L140 50 L130 35 Q150 45 150 65 L130 65 Z" stroke="#C7F11A" stroke-width="3" fill="none" opacity="0.07"></path>
     </svg>
   </div>
 
-  <!-- Dot Grid Decoration -->
-  <div class="index-hero-dotgrid" aria-hidden="true"></div>
+  <!-- Diagonal dot grid decoration -->
+  <div class="index-hero-dots" aria-hidden="true"></div>
 
-  <!-- Content Overlay -->
+  <!-- Main Content -->
   <div class="index-hero-container">
     <div class="index-hero-content">
 
-      <!-- Label -->
-      <p><span class="index-hero-label">מחזור מתכות ואלקטרוניקה בישראל</span>
+      <!-- Label badge -->
+      <div class="index-hero-label">
+        <span class="index-hero-label-dot"></span>
+        <span>מחזור מתכות ואלקטרוניקה בישראל</span>
+      </div>
 
-      
-      </p><!-- H1 --><h1 class="index-hero-h1">
-        פתרונות מחזור מתכות<br>
-        <span class="index-hero-h1-accent">מוסמכים ואחראיים</span><br>
-        לתעשייה ולרשויות
+      <!-- H1 -->
+      <h1 class="index-hero-h1">
+        <span class="index-hero-h1-line">פתרונות מחזור מתכות</span>
+        <span class="index-hero-h1-line index-hero-h1-accent">מוסמכים ואחראיים</span>
+        <span class="index-hero-h1-line">לתעשייה ולרשויות</span>
       </h1>
 
-      <!-- Subtitle -->
-      <h3 class="index-hero-subtitle" style="">
-        אוספים, ממיינים ומעבדים פסולת מתכות וציוד אלקטרוני בהתאם לדרישות הסביבה עם אישורים רשמיים ושירות מקצועי ברחבי ישראל.
-      </h3>
+      <!-- H3 Subtitle -->
+      <h3 class="index-hero-subtitle">אוספים, ממיינים ומעבדים פסולת מתכות וציוד אלקטרוני בהתאם לדרישות הסביבה עם אישורים רשמיים ושירות מקצועי ברחבי ישראל.</h3>
 
-      <!-- Trust Line -->
-      <p class="index-hero-trust">
-        <span class="index-hero-trust-dot" aria-hidden="true"></span>
-        שירות לחברות תעשייתיות, יצרני טכנולוגיה ורשויות מקומיות
-      </p>
+      <!-- Service tags -->
+      <p class="index-hero-service-tag">שירות לחברות תעשייתיות, יצרני טכנולוגיה ורשויות מקומיות</p>
 
       <!-- CTAs -->
       <div class="index-hero-ctas">
-        <a href="/contact" class="index-hero-btn-primary" data-element-type="button" data-element-id="btn-1777901216293-iwwcgq9fi" data-native-element="true">
-          <i class="fa fa-phone" aria-hidden="true"></i>
+        <a href="/contact" class="index-hero-btn-primary">
+          <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
           צרו קשר עכשיו
         </a>
-        <a href="/materials" class="index-hero-btn-secondary" data-element-type="button" data-element-id="btn-1777901216293-fsxwivd6v" data-native-element="true">
-          <i class="fa fa-recycle" aria-hidden="true"></i>
+        <a href="/materials" class="index-hero-btn-secondary">
           מה אנחנו מחזרים
         </a>
       </div>
@@ -829,14 +1140,12 @@
     </div>
   </div>
 
-  <!-- Bottom Divider -->
+  <!-- Bottom diagonal divider -->
   <div class="index-hero-divider-wrapper">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1440 90" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,90 L0,55 L120,48 L240,58 L360,44 L480,52 L600,40 L720,50 L840,42 L960,54 L1080,44 L1200,56 L1320,46 L1440,52 L1440,90 Z" fill="#0A0A0A"></path>
-      <path d="M0,90 L0,68 L180,62 L360,70 L540,60 L720,66 L900,58 L1080,66 L1260,60 L1440,66 L1440,90 Z" fill="#0A0A0A" opacity="0.7"></path>
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,80 L0,55 Q180,20 360,45 T720,30 Q900,15 1080,40 T1440,25 L1440,80 Z" fill="#0A0A0A"></path>
     </svg>
   </div>
-
 </section>
 
 <section class="index-capabilities-section" data-layout-spec="בית-capabilities" dir="rtl" id="index-capabilities-section">
@@ -886,7 +1195,7 @@
     <div class="cap-visual-col">
       <!-- Main large image tile -->
       <div class="cap-main-tile">
-        <div data-zappy-zoom-wrapper="true" data-element-id="img-1777901216296-n4ftez1gq" data-element-type="image" data-zappy-zoom-wrapper-width="606px" data-zappy-zoom-wrapper-height="340px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 606px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 340px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" data-zappy-card-slot-fill="1"><img data-placeholder="index-capabilities-image-1" data-context="Industrial metal recycling facility in Israel — large landscape view of sorted and organized scrap metals: copper cables, aluminum sheets, steel beams, and iron parts neatly separated in industrial bins. Professional facility with high-visibility lighting, dark industrial aesthetic, heavy machinery in background." width="600" height="400" src="/assets/site-index-capabilities-image-1-1777901452137-w4tf8b.webp?v=1777901455387" alt="מתקן מחזור מתכות תעשייתי עם מיון מתכות מסוגים שונים" data-element-type="image" data-element-id="img-1777901216296-n4ftez1gq" style="display: block; object-position: 50% 50% !important; object-fit: cover !important; margin: 0px !important; left: 0% !important; top: 0% !important; width: 100% !important; height: 100% !important; max-width: none !important; max-height: none !important; position: absolute !important;" data-zappy-zoom="1" data-zappy-original-width="606.4000244140625" data-zappy-original-height="339.9250183105469" data-zappy-object-position="50% 50%" data-zappy-mobile-object-position="50% 50%" data-zappy-mobile-zoom="1"></div>
+        <div data-zappy-zoom-wrapper="true" data-element-id="img-1777901216296-n4ftez1gq" data-element-type="image" data-zappy-zoom-wrapper-width="606px" data-zappy-zoom-wrapper-height="340px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 606px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 340px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" data-zappy-card-slot-fill="1"><img data-placeholder="index-capabilities-image-1" data-context="Industrial metal recycling facility in Israel — large landscape view of sorted and organized scrap metals: copper cables, aluminum sheets, steel beams, and iron parts neatly separated in industrial bins. Professional facility with high-visibility lighting, dark industrial aesthetic, heavy machinery in background." width="600" height="400" src="/assets/site-index-capabilities-image-1-1777901452137-w4tf8b.webp?v=1777901455387" alt="מתקן מחזור מתכות תעשייתי עם מיון מתכות מסוגים שונים" data-element-type="image" data-element-id="img-1777901216296-n4ftez1gq" style="display: block !important; object-position: 50% 50% !important; object-fit: cover !important; margin: 0px !important; left: -0.206363% !important; top: 0% !important; width: 100.413% !important; height: 100% !important; max-width: none !important; max-height: none !important; position: absolute !important;" data-zappy-zoom="1" data-zappy-original-width="606.4000244140625" data-zappy-original-height="339.9250183105469" data-zappy-object-position="50% 50%"></div>
         <!-- Floating approval panel -->
         <div class="cap-approval-panel">
           <div class="cap-approval-title" style="">
@@ -911,7 +1220,7 @@
 
       <!-- Secondary peek tile -->
       <div class="cap-peek-tile">
-        <div data-zappy-zoom-wrapper="true" data-element-id="img-1777901216296-j3t4b0v72" data-element-type="image" data-zappy-zoom-wrapper-width="334px" data-zappy-zoom-wrapper-height="352px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 334px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 352px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" data-zappy-card-slot-fill="1"><img data-placeholder="index-capabilities-image-2" data-context="Close-up of electronic waste components ready for recycling — circuit boards, old computer motherboards, hard drives, cables and electronic parts organized in industrial containers. Dark industrial background, professional e-waste dismantling facility, Israeli recycling center." width="300" height="200" src="/assets/site-index-capabilities-image-2-1777901375552-jqowqn.webp?v=1777901378142" alt="רכיבים אלקטרוניים מוכנים למחזור — לוחות אם, כוננים ורכיבים" data-element-type="image" data-element-id="img-1777901216296-j3t4b0v72" style="border-radius: 8px; object-position: 50% 50% !important; object-fit: cover !important; width: 100% !important; height: 100% !important; max-width: none !important; display: block !important; margin: 0px !important; left: 0% !important; top: 0% !important; max-height: none !important; position: absolute !important;" data-zappy-object-position="50% 50%" data-zappy-zoom="1" data-zappy-original-width="332.8000183105469" data-zappy-original-height="350"></div>
+        <div data-zappy-zoom-wrapper="true" data-element-id="img-1777901216296-j3t4b0v72" data-element-type="image" data-zappy-zoom-wrapper-width="334px" data-zappy-zoom-wrapper-height="352px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 334px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 352px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" data-zappy-card-slot-fill="1" class="zappy-resizable-hover"><img data-placeholder="index-capabilities-image-2" data-context="Close-up of electronic waste components ready for recycling — circuit boards, old computer motherboards, hard drives, cables and electronic parts organized in industrial containers. Dark industrial background, professional e-waste dismantling facility, Israeli recycling center." width="300" height="200" src="/assets/site-index-capabilities-image-2-1777901375552-jqowqn.webp?v=1777901378142" alt="רכיבים אלקטרוניים מוכנים למחזור — לוחות אם, כוננים ורכיבים" data-element-type="image" data-element-id="img-1777901216296-j3t4b0v72" style="border-radius: 8px; object-position: 50% 50% !important; object-fit: cover !important; width: 100% !important; height: 100% !important; max-width: none !important; display: block !important; margin: 0px !important; left: 0% !important; top: 0% !important; max-height: none !important; position: absolute !important;" data-zappy-object-position="50% 50%" data-zappy-zoom="1" data-zappy-original-width="332.8000183105469" data-zappy-original-height="350"></div>
         <div class="cap-peek-label">פסולת אלקטרונית</div>
       </div>
     </div>
@@ -1102,7 +1411,7 @@
         <!-- Step 1 -->
         <article class="process-step" data-grid-item-index="0">
           <div class="step-number-wrap">
-            <p class="zappy-editable"><span class="step-number">01</span>
+            <p><span class="step-number">01</span>
             </p><div class="step-connector" aria-hidden="true"></div>
           </div>
           <div class="step-content">
@@ -1123,7 +1432,7 @@
         <!-- Step 2 -->
         <article class="process-step" data-grid-item-index="1">
           <div class="step-number-wrap">
-            <p class="zappy-editable"><span class="step-number">02</span>
+            <p><span class="step-number">02</span>
             </p><div class="step-connector" aria-hidden="true"></div>
           </div>
           <div class="step-content">
@@ -1144,7 +1453,7 @@
         <!-- Step 3 -->
         <article class="process-step" data-grid-item-index="2">
           <div class="step-number-wrap">
-            <p class="zappy-editable"><span class="step-number">03</span>
+            <p><span class="step-number">03</span>
             </p><div class="step-connector" aria-hidden="true"></div>
           </div>
           <div class="step-content">
@@ -1185,7 +1494,7 @@
       <!-- Supporting Image Tile -->
       <aside class="process-image-tile">
         <div class="process-image-frame">
-          <div data-zappy-zoom-wrapper="true" data-element-id="img-1777901703851-d73laxo2u" data-element-type="image" data-zappy-zoom-wrapper-width="320px" data-zappy-zoom-wrapper-height="592px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 320px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 592px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img data-placeholder="index-process-image-1" data-context="A large industrial recycling truck parked at a receiving facility in Israel. Workers in safety vests are loading scrap metal and electronic waste onto the truck. The scene is professional, organized, and conveys environmental responsibility. Industrial setting with metal containers, daytime, clean composition." width="480" height="720" src="/assets/site-index-process-image-1-1777901864661-2vdfhf.webp?v=1777901867000" alt="משאית איסוף פסולת מתכות וציוד אלקטרוני במתקן קליטה מקצועי" data-element-type="image" data-element-id="img-1777901703851-d73laxo2u" style="object-position: 50% 50% !important; display: block; margin: 0px !important; left: 0% !important; top: 0% !important; width: 100% !important; height: 100% !important; max-width: none !important; max-height: none !important; object-fit: cover !important;" data-zappy-zoom="1" data-zappy-original-width="320" data-zappy-original-height="592" data-zappy-object-position="50% 50%" data-zappy-mobile-object-position="50% 50%" data-zappy-mobile-zoom="1"></div>
+          <div data-zappy-zoom-wrapper="true" data-element-id="img-1777901703851-d73laxo2u" data-element-type="image" data-zappy-zoom-wrapper-width="320px" data-zappy-zoom-wrapper-height="592px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 320px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 592px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img data-placeholder="index-process-image-1" data-context="A large industrial recycling truck parked at a receiving facility in Israel. Workers in safety vests are loading scrap metal and electronic waste onto the truck. The scene is professional, organized, and conveys environmental responsibility. Industrial setting with metal containers, daytime, clean composition." width="480" height="720" src="/assets/site-index-process-image-1-1777901864661-2vdfhf.webp?v=1777901867000" alt="משאית איסוף פסולת מתכות וציוד אלקטרוני במתקן קליטה מקצועי" data-element-type="image" data-element-id="img-1777901703851-d73laxo2u" style="display: block; object-position: 50% 50% !important; object-fit: cover !important; margin: 0px !important; left: 0% !important; top: 0% !important; width: 100% !important; height: 100% !important; max-width: none !important; max-height: none !important; position: absolute !important;" data-zappy-zoom="1" data-zappy-original-width="320" data-zappy-original-height="592" data-zappy-object-position="50% 50%" data-zappy-mobile-object-position="50% 50%" data-zappy-mobile-zoom="1"></div>
           <div class="image-accent-bar" aria-hidden="true"></div>
           <div class="image-badge">
             <span class="badge-number">100%</span>
