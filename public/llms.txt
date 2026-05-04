@@ -40,7 +40,10 @@ Information about WCAG compliance and accessibility features.
 
 ## How to Contact Us
 
-- (No contact details configured yet.)
+- Email: eco@eco.co.il
+- Phone: +97255555555
+- Phone (tel): tel:+97255555555
+- Address: Israel, Tel Aviv
 
 ### Contact form
 - URL: https://example.com/contact

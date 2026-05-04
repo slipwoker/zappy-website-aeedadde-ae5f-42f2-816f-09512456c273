@@ -634,7 +634,7 @@
     </svg>
   </button>
 
-  <button class="phone-header-btn" data-phone="[business_phone]" aria-label="Call">
+  <button class="phone-header-btn" data-phone="+97255555555" aria-label="Call">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
     </svg>
@@ -1037,7 +1037,7 @@
         const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
         const phoneNumber = phoneLinks.length > 0 
           ? phoneLinks[0].getAttribute('href').replace('tel:', '')
-          : '[business_phone]';
+          : '+97255555555';
         
         window.location.href = 'tel:' + phoneNumber;
         console.log('[Navbar] Phone button clicked');
@@ -1124,15 +1124,15 @@
       <h3 class="index-hero-subtitle">אוספים, ממיינים ומעבדים פסולת מתכות וציוד אלקטרוני בהתאם לדרישות הסביבה עם אישורים רשמיים ושירות מקצועי ברחבי ישראל.</h3>
 
       <!-- Service tags -->
-      <p class="index-hero-service-tag" style=""><b>שירות לחברות תעשייתיות, יצרני טכנולוגיה ורשויות מקומיות</b></p>
+      <p class="index-hero-service-tag">שירות לחברות תעשייתיות, יצרני טכנולוגיה ורשויות מקומיות</p>
 
       <!-- CTAs -->
       <div class="index-hero-ctas">
-        <a href="/contact" class="index-hero-btn-primary" data-element-type="button" data-element-id="btn-1777902028411-xs0icxaq9" data-native-element="true">
+        <a href="/contact" class="index-hero-btn-primary">
           <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
           צרו קשר עכשיו
         </a>
-        <a href="/materials" class="index-hero-btn-secondary" data-element-type="button" data-element-id="btn-1777902028411-ahsnhrewt" data-native-element="true">
+        <a href="/materials" class="index-hero-btn-secondary">
           מה אנחנו מחזרים
         </a>
       </div>
@@ -1198,11 +1198,11 @@
         <div data-zappy-zoom-wrapper="true" data-element-id="img-1777901216296-n4ftez1gq" data-element-type="image" data-zappy-zoom-wrapper-width="606px" data-zappy-zoom-wrapper-height="340px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 606px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 340px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" data-zappy-card-slot-fill="1"><img data-placeholder="index-capabilities-image-1" data-context="Industrial metal recycling facility in Israel — large landscape view of sorted and organized scrap metals: copper cables, aluminum sheets, steel beams, and iron parts neatly separated in industrial bins. Professional facility with high-visibility lighting, dark industrial aesthetic, heavy machinery in background." width="600" height="400" src="/assets/site-index-capabilities-image-1-1777901452137-w4tf8b.webp?v=1777901455387" alt="מתקן מחזור מתכות תעשייתי עם מיון מתכות מסוגים שונים" data-element-type="image" data-element-id="img-1777901216296-n4ftez1gq" style="display: block !important; object-position: 50% 50% !important; object-fit: cover !important; margin: 0px !important; left: -0.206363% !important; top: 0% !important; width: 100.413% !important; height: 100% !important; max-width: none !important; max-height: none !important; position: absolute !important;" data-zappy-zoom="1" data-zappy-original-width="606.4000244140625" data-zappy-original-height="339.9250183105469" data-zappy-object-position="50% 50%"></div>
         <!-- Floating approval panel -->
         <div class="cap-approval-panel">
-          <div class="cap-approval-title" style="">
+          <div class="cap-approval-title" >
             <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="cursor: pointer;"><polyline points="20 6 9 17 4 12"></polyline></svg>
             תקנים ואישורים
           </div>
-          <ul class="cap-approval-list" style=""><li data-grid-item-index="0">
+          <ul class="cap-approval-list" ><li data-grid-item-index="0">
               <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="cursor: pointer;" data-element-id="zappy-temp-icon-1777901412891-s4tbmrs4e"><polyline points="20 6 9 17 4 12"></polyline></svg>
               <span>עמידה בתקנות המשרד להגנת הסביבה</span>
             </li><li data-grid-item-index="1">
@@ -1240,7 +1240,7 @@
     <!-- Intro Block -->
     <div class="index-materials-intro">
       <p><span class="index-materials-label" style="color: rgb(21, 24, 29) !important;">חומרים מתקבלים</span>
-      </p><h2 class="index-materials-heading" style="">מה אנחנו <span class="index-materials-accent">ממחזרים?</span></h2>
+      </p><h2 class="index-materials-heading" >מה אנחנו <span class="index-materials-accent">ממחזרים?</span></h2>
       <p class="index-materials-subtext" style="color: rgb(21, 24, 29) !important;">אקו מתכות מקבלת מגוון רחב של חומרי גרט ופסולת אלקטרונית מחברות, מפעלים ורשויות מקומיות. כל חומר עובר תהליך מיון וטיפול מקצועי בהתאם לסוגו ולדרישות הסביבתיות.</p>
     </div>
 
@@ -1400,7 +1400,7 @@
     <header class="process-header">
       <p><span class="process-label">איך זה עובד</span>
       </p><h2 class="process-title" style="text-align: center; max-width: 45ch; margin-left: auto; margin-right: auto;" data-zappy-text-width="narrow">תהליך מחזור מתכות<br><em>פשוט, אמין ואחראי</em></h2>
-      <p class="process-intro" style="text-align: center;"></p><h3 style="">אנו מלווים כל לקוח מהרגע הראשון ועד לסיום התהליך&nbsp; בשקיפות מלאה, עם תיעוד מסודר ומחויבות לסביבה.</h3><p></p>
+      <p class="process-intro" style="text-align: center;"></p><h3 >אנו מלווים כל לקוח מהרגע הראשון ועד לסיום התהליך&nbsp; בשקיפות מלאה, עם תיעוד מסודר ומחויבות לסביבה.</h3><p></p>
     </header>
 
     <!-- Main Layout: Steps + Image -->
@@ -1425,7 +1425,7 @@
               </svg>
             </div>
             <h3 class="step-title">תיאום איסוף</h3>
-            <p class="step-desc" style="">פונים אלינו בטלפון או בטופס ומתאמים זמן נוח לאיסוף.<br>אנו מגיעים לכל מקום בישראל, כולל מפעלים, רשויות מקומיות ומחסנים תעשייתיים.</p>
+            <p class="step-desc" >פונים אלינו בטלפון או בטופס ומתאמים זמן נוח לאיסוף.<br>אנו מגיעים לכל מקום בישראל, כולל מפעלים, רשויות מקומיות ומחסנים תעשייתיים.</p>
           </div>
         </article>
 
@@ -1446,7 +1446,7 @@
               </svg>
             </div>
             <h3 class="step-title">איסוף והובלה</h3>
-            <p class="step-desc" style="">צוות המשאיות שלנו מגיע במועד שנקבע, טוען את החומרים בצורה מסודרת ומוביל אותם ישירות למתקן המיון שלנו בבטיחות ובמקצועיות.</p>
+            <p class="step-desc" >צוות המשאיות שלנו מגיע במועד שנקבע, טוען את החומרים בצורה מסודרת ומוביל אותם ישירות למתקן המיון שלנו בבטיחות ובמקצועיות.</p>
           </div>
         </article>
 
@@ -1465,7 +1465,7 @@
               </svg>
             </div>
             <h3 class="step-title">מיון ועיבוד אחראי</h3>
-            <p class="step-desc" style="">במתקן שלנו מבצעים מיון מדויק של מתכות, ציוד אלקטרוני ופסולת תוך עמידה בכל תקני הסביבה הישראליים ועיבוד אחראי של כל חומר.</p>
+            <p class="step-desc" >במתקן שלנו מבצעים מיון מדויק של מתכות, ציוד אלקטרוני ופסולת תוך עמידה בכל תקני הסביבה הישראליים ועיבוד אחראי של כל חומר.</p>
           </div>
         </article>
 
@@ -1485,7 +1485,7 @@
               </svg>
             </div>
             <h3 class="step-title">תיעוד ושותפות מתמשכת</h3>
-            <p class="step-desc" style="">בסיום כל תהליך מנפיקים אישור מחזור מסודר לצרכי דיווח ורגולציה. אנו בונים קשרי שותפות ארוכי טווח עם לקוחותינו מחזור ציוד אלקטרוני לחברות בצורה שיטתית ורציפה.</p>
+            <p class="step-desc" >בסיום כל תהליך מנפיקים אישור מחזור מסודר לצרכי דיווח ורגולציה. אנו בונים קשרי שותפות ארוכי טווח עם לקוחותינו מחזור ציוד אלקטרוני לחברות בצורה שיטתית ורציפה.</p>
           </div>
         </article>
 
@@ -1576,9 +1576,9 @@
         <img src="/assets/logo.webp" alt="אקו מתכות" class="logo" data-element-type="image" data-element-id="img-1777901048512-d3kwgu2sy" data-zappy-footer-image="true">
         <p class="footer-tagline">מובילים בתחום מחזור מתכות ופסולת אלקטרונית בישראל. שירות אמין, אחראי וידידותי לסביבה לעסקים, תעשייה ורשויות מקומיות.</p>
         <div class="footer-social">
-          <a href="[facebook_handle]" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="[instagram_handle]" aria-label="Instagram"><i class="fab fa-instagram" data-element-type="icon" data-element-id="icon-1777901048509-3yzg9j7zj" data-icon-type="fontawesome"></i></a>
-          <a href="[whatsapp_handle]" aria-label="WhatsApp"><i class="fab fa-whatsapp" data-element-type="icon" data-element-id="icon-1777901048510-8pwhbmrw9" data-icon-type="fontawesome"></i></a>
+          <a href="#" aria-label="Facebook" style="display:none !important;"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram" style="display:none !important;"><i class="fab fa-instagram" data-element-type="icon" data-element-id="icon-1777901048509-3yzg9j7zj" data-icon-type="fontawesome"></i></a>
+          <a href="#" aria-label="WhatsApp" style="display:none !important;"><i class="fab fa-whatsapp" data-element-type="icon" data-element-id="icon-1777901048510-8pwhbmrw9" data-icon-type="fontawesome"></i></a>
         </div>
       </div>
 
@@ -1586,7 +1586,7 @@
       <div class="footer-col">
         <h4 class="footer-heading"><span class="heading-accent"></span>ניווט מהיר</h4>
         <ul class="footer-links">
-          <li><a href="/materials" style=""><i class="fas fa-chevron-left link-arrow" style="cursor: pointer;"></i>חומרים מקובלים</a></li>
+          <li><a href="/materials" ><i class="fas fa-chevron-left link-arrow" style="cursor: pointer;"></i>חומרים מקובלים</a></li>
           <li><a href="/about"><i class="fas fa-chevron-left link-arrow"></i>אודות</a></li>
           <li><a href="/contact"><i class="fas fa-chevron-left link-arrow"></i>צור קשר</a></li>
         </ul>
@@ -1598,14 +1598,14 @@
         <ul class="footer-contact">
           <li>
             <span class="contact-icon"><i class="fas fa-envelope" data-element-type="icon" data-element-id="icon-1777901048510-iq8ih0wx3" data-icon-type="fontawesome"></i></span>
-            <span class="contact-text"><a href="mailto:[business_email]">[business_email]</a></span>
+            <span class="contact-text"><a href="mailto:eco@eco.co.il">eco@eco.co.il</a></span>
           </li>
           <li>
             <span class="contact-icon"><i class="fas fa-phone" data-element-type="icon" data-element-id="icon-1777901048510-r70f58koy" data-icon-type="fontawesome"></i></span>
-            <span class="contact-text"><a href="tel:[business_phone]">[business_phone]</a></span>
+            <span class="contact-text"><a href="tel:+97255555555">+97255555555</a></span>
           </li>
           <li><a href="/"><span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
-            <span class="contact-text">[business_address]</span></a></li>
+            <span class="contact-text">Israel, Tel Aviv</span></a></li>
         </ul>
       </div>
 
@@ -1630,13 +1630,13 @@
     <div class="footer-bottom">
       <p class="footer-copy">© 2026 אקו מתכות. כל הזכויות שמורות.</p>
       <div class="footer-legal">
-        <a href="/privacy" style="">מדיניות פרטיות</a>
+        <a href="/privacy" >מדיניות פרטיות</a>
         <span class="legal-sep"></span>
-        <a href="/terms" style="">תנאי שימוש</a>
+        <a href="/terms" >תנאי שימוש</a>
         <span class="legal-sep"></span>
         <a href="/accessibility">נגישות</a>
         <span class="legal-sep"></span>
-        <a href="https://zappy5.com" target="_blank" class="zappy-attribution" style="">נוצר במצעות Zappy</a>
+        <a href="https://zappy5.com" target="_blank" class="zappy-attribution" >נוצר במצעות Zappy</a>
       </div>
     </div>
 
