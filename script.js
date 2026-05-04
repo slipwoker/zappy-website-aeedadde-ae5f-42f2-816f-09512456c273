@@ -2078,7 +2078,7 @@ window.onload = function() {
                 '[tiktok_handle]',
                 '[pinterest_handle]',
                 // Old format (full URL placeholders)
-                '[social_facebook]',
+                'https://facebook.com/eco',
                 '[social instagram]',
                 '[social_instagram]',
                 '[social whatsapp]',
