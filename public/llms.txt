@@ -7,33 +7,33 @@
 ## Pages
 
 ### בית
-https://example.com
+https://eco-metachot.zappy5.app
 אקו מתכות מובילה את מהפכת המחזור בישראל — פסולת אלקטרונית, גרוטאות מתכת וציוד תעשייתי מטופלים בצורה אחראית וידידותית לסביבה. גלו כיצד אנחנו הופכים פסולת להזדמנות.
 
 ### חומרים מקובלים
-https://example.com/materials
+https://eco-metachot.zappy5.app/materials
 ברזל, נחושת, אלומיניום, ציוד אלקטרוני ועוד — אקו מתכות מקבלת מגוון רחב של חומרים למחזור. בדקו אילו חומרים אנחנו מעבדים ומצאו את הפתרון הנכון לפסולת שלכם.
 
 ### אודות
-https://example.com/about
+https://eco-metachot.zappy5.app/about
 אקו מתכות נוסדה מתוך מחויבות אמיתית לסביבה ולדורות הבאים. למדו על הערכים, הניסיון והמומחיות שהופכים אותנו לשותף האמין ביותר לשירותי מחזור מתכות לתעשייה בישראל.
 
 ### צור קשר
-https://example.com/contact
+https://eco-metachot.zappy5.app/contact
 צרו קשר עם צוות אקו מתכות עוד היום ותקבלו פתרון מחזור מותאם אישית לעסק, לרשות המקומית או למפעל שלכם. אנחנו כאן לענות, לאסוף ולטפל — מהר ובמקצועיות.
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://example.com/privacy
+https://eco-metachot.zappy5.app/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://example.com/terms
+https://eco-metachot.zappy5.app/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://example.com/accessibility
+https://eco-metachot.zappy5.app/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
@@ -46,8 +46,8 @@ Information about WCAG compliance and accessibility features.
 - Address: Israel, Tel Aviv
 
 ### Contact form
-- URL: https://example.com/contact
-- Endpoint: https://example.com/api/email/contact-form
+- URL: https://eco-metachot.zappy5.app/contact
+- Endpoint: https://eco-metachot.zappy5.app/api/email/contact-form
 - Method: POST
 - Content-Type: application/json
 - Fields:
@@ -76,6 +76,6 @@ A metal and electronic equipment recycling company operating in Israel. The busi
 
 # Machine-readable feeds
 
-- Sitemap (XML): https://example.com/sitemap.xml
-- Robots: https://example.com/robots.txt
-- Flattened page text (for LLMs): https://example.com/llms-full.txt
+- Sitemap (XML): https://eco-metachot.zappy5.app/sitemap.xml
+- Robots: https://eco-metachot.zappy5.app/robots.txt
+- Flattened page text (for LLMs): https://eco-metachot.zappy5.app/llms-full.txt
