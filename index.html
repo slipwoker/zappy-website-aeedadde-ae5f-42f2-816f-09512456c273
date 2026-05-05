@@ -1264,7 +1264,7 @@ body.zl-loading {
 </script>
   
   <main>
-    <section class="index-hero-section" data-layout-spec="בית-hero" dir="rtl" data-hero-type="fullscreen-scrim" data-zappy-section="true" id="index-hero-section" >
+    <section class="index-hero-section" data-layout-spec="בית-hero" dir="rtl" data-hero-type="fullscreen-scrim" data-zappy-section="true" id="index-hero-section"  data-zappy-animate="fade-in" data-zappy-anim-duration="0.6s" data-zappy-anim-delay="0s">
   <!-- Background Image -->
   <div class="index-hero-bg" style="background-image: url('assets/site-index-hero-image-1.webp'); background-size: cover; background-position: center;"></div>
 
@@ -1328,7 +1328,7 @@ body.zl-loading {
   </div>
 </section>
 
-<section class="index-capabilities-section" data-layout-spec="בית-capabilities" dir="rtl" id="index-capabilities-section" >
+<section class="index-capabilities-section" data-layout-spec="בית-capabilities" dir="rtl" id="index-capabilities-section"  data-zappy-animate="fade-in" data-zappy-anim-duration="0.6s" data-zappy-anim-delay="0.1s">
   <!-- Decorative dot grid -->
   <div class="cap-dot-grid" aria-hidden="true"></div>
 
@@ -1414,7 +1414,7 @@ body.zl-loading {
   </div>
 </section>
 
-<section class="index-materials-section" data-layout-spec="בית-materials" dir="rtl" id="index-materials-section" >
+<section class="index-materials-section" data-layout-spec="בית-materials" dir="rtl" id="index-materials-section"  data-zappy-animate="fade-in" data-zappy-anim-duration="0.6s" data-zappy-anim-delay="0.2s">
   <div class="index-materials-container">
 
     <!-- Intro Block -->
@@ -1564,7 +1564,7 @@ body.zl-loading {
 
 </section>
 
-<section class="index-process-section" data-layout-spec="בית-process" dir="rtl" id="index-process-section" >
+<section class="index-process-section" data-layout-spec="בית-process" dir="rtl" id="index-process-section"  data-zappy-animate="fade-in" data-zappy-anim-duration="0.6s" data-zappy-anim-delay="0.30000000000000004s">
   <!-- Decorative watermark -->
   <div class="process-watermark" aria-hidden="true">
     <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1694,7 +1694,7 @@ body.zl-loading {
   </div>
 </section>
 
-<section class="index-cta-section" data-layout-spec="בית-cta" dir="rtl" >
+<section class="index-cta-section" data-layout-spec="בית-cta" dir="rtl"  data-zappy-animate="fade-in" data-zappy-anim-duration="0.6s" data-zappy-anim-delay="0.4s">
   <!-- Decorative lime accent bar -->
   <div class="index-cta-accent-bar" aria-hidden="true"></div>
 
@@ -1935,7 +1935,26 @@ body.zl-loading {
 </script>
 
     <div data-integration="accessibility:toolbar"></div>
-
+<script data-zappy-animation-observer="">(function() {
+  if (window.__zappyAnimObserver) return;
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        var el = entry.target;
+        var anim = el.getAttribute('data-zappy-animate');
+        var dur = el.getAttribute('data-zappy-anim-duration') || '0.6s';
+        var del = el.getAttribute('data-zappy-anim-delay') || '0s';
+        el.style.animation = 'zappy-' + anim + ' ' + dur + ' ' + del + ' ease forwards';
+        el.classList.add('zappy-animated');
+        observer.unobserve(el);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+  document.querySelectorAll('[data-zappy-animate]').forEach(function(el) {
+    observer.observe(el);
+  });
+  window.__zappyAnimObserver = observer;
+})();</script>
     <script src="/script.js"></script>
 
     <script id="zappy-mobile-submenu-script">
