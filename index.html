@@ -651,6 +651,159 @@
 </head>
 <body>
 
+
+<!-- ══════════════════════════════════════════
+     LOADING SCREEN
+══════════════════════════════════════════ -->
+<div id="zappy-loading-screen" aria-hidden="true">
+  <div class="zl-bg"></div>
+  <div class="zl-content">
+    <div class="zl-logo-wrap">
+      <img src="/assets/logo-1778001311838-whf8zz.webp?v=1778001312237-yxxk4b" alt="א.מ פסולת מתכות בע&quot;מ" class="zl-logo">
+    </div>
+    <div class="zl-bar-wrap">
+      <div class="zl-bar"></div>
+    </div>
+    <p class="zl-tagline">מחזור מתכות אחראי לסביבה ירוקה יותר</p>
+  </div>
+  <div class="zl-corner-deco zl-corner-deco--tr" aria-hidden="true"></div>
+  <div class="zl-corner-deco zl-corner-deco--bl" aria-hidden="true"></div>
+</div>
+
+<style>
+/* ── Loading Screen Styles ── */
+#zappy-loading-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0A0A0A;
+  transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.7s ease;
+  direction: rtl;
+}
+#zappy-loading-screen.zl-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.zl-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 50% at 50% 50%, rgba(199,241,26,0.06) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 40% at 80% 20%, rgba(0,207,232,0.04) 0%, transparent 60%);
+  pointer-events: none;
+}
+.zl-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+.zl-logo-wrap {
+  opacity: 0;
+  transform: translateY(20px) scale(0.92);
+  animation: zlLogoIn 0.75s cubic-bezier(0.34, 1.56, 0.64, 1) 0.15s forwards;
+}
+.zl-logo {
+  height: 72px;
+  width: auto;
+  max-width: 260px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 28px rgba(199,241,26,0.22));
+}
+.zl-bar-wrap {
+  width: 200px;
+  height: 3px;
+  background: rgba(199,241,26,0.15);
+  border-radius: 100px;
+  overflow: hidden;
+  opacity: 0;
+  animation: zlFadeIn 0.4s ease 0.6s forwards;
+}
+.zl-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #C7F11A 0%, #E0FF4F 60%, #00CFE8 100%);
+  border-radius: 100px;
+  animation: zlProgress 1.4s cubic-bezier(0.4, 0, 0.2, 1) 0.7s forwards;
+  box-shadow: 0 0 12px rgba(199,241,26,0.5);
+}
+.zl-tagline {
+  font-family: 'Assistant', 'Heebo', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: rgba(245,247,250,0.45);
+  letter-spacing: 0.06em;
+  margin: 0;
+  opacity: 0;
+  animation: zlFadeIn 0.5s ease 0.9s forwards;
+}
+
+/* Corner decorations */
+.zl-corner-deco {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  pointer-events: none;
+  opacity: 0.12;
+  border-color: #C7F11A;
+  border-style: solid;
+  animation: zlFadeIn 0.6s ease 0.3s forwards;
+  opacity: 0;
+}
+.zl-corner-deco--tr {
+  top: 32px; right: 32px;
+  border-width: 2px 2px 0 0;
+  border-radius: 0 8px 0 0;
+}
+.zl-corner-deco--bl {
+  bottom: 32px; left: 32px;
+  border-width: 0 0 2px 2px;
+  border-radius: 0 0 0 8px;
+}
+
+@keyframes zlLogoIn {
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes zlFadeIn {
+  to { opacity: 1; }
+}
+@keyframes zlProgress {
+  0%   { width: 0%; }
+  30%  { width: 40%; }
+  70%  { width: 75%; }
+  100% { width: 100%; }
+}
+
+/* Prevent scroll while loading */
+body.zl-loading {
+  overflow: hidden;
+}
+</style>
+
+<script>
+(function() {
+  document.body.classList.add('zl-loading');
+  window.addEventListener('load', function() {
+    setTimeout(function() {
+      var screen = document.getElementById('zappy-loading-screen');
+      if (screen) {
+        screen.classList.add('zl-hidden');
+        document.body.classList.remove('zl-loading');
+        setTimeout(function() {
+          screen.style.display = 'none';
+        }, 750);
+      }
+    }, 2200);
+  });
+})();
+</script>
+
   <nav class="navbar" dir="rtl">
   <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
     <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
