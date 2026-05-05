@@ -223,6 +223,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="מחזור מתכות — אקו מתכות">
     <meta name="twitter:description" content="אקו מתכות מובילה את מהפכת המחזור בישראל — פסולת אלקטרונית, גרוטאות מתכת וציוד תעשייתי מטופלים בצורה אחראית וידידותית לסביבה. גלו כיצד אנחנו הופכים פסולת להזדמנות.">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"LocalBusiness","@id":"https://eco-metachot.zappy5.app#organization","name":"א.מ פסולת מתכות בע\"מ","url":"https://eco-metachot.zappy5.app","description":"A metal and electronic equipment recycling company operating in Israel. The business focuses on eco-friendly recycling solutions, collecting and processing scrap metals and electronic waste (e-waste). The brand aims for a modern, clean aesthetic with a professional and trustworthy feel. The website should include a homepage video, light explanatory content, a contact section, and a clear display of recyclable materials accepted.","address":{"@type":"PostalAddress","streetAddress":"Israel, Tel Aviv"},"contactPoint":[{"@type":"ContactPoint","contactType":"customer service","email":"eco@eco.co.il","telephone":"+97255555555"}]},{"@type":"WebSite","@id":"https://eco-metachot.zappy5.app#website","url":"https://eco-metachot.zappy5.app","name":"א.מ פסולת מתכות בע\"מ","publisher":{"@id":"https://eco-metachot.zappy5.app#organization"}}]}</script>
     <meta property="og:type" content="website">
   <meta property="og:locale" content="he_IL">
   
@@ -614,11 +615,37 @@
     </style>
 
     <style id="zappy-widget-visibility">
-      #mic-access-tool-general-button, .mic-access-tool-general-button,
-      #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
-      ._access-icon, #mic-access-tool-box, .mic-access-tool-box,
-      #mic-init-access-tool #mic-access-tool-box, div[id*="mic-access-tool-box"], ._access-menu {
-        display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;
+      html[dir="rtl"] .whatsapp-float { right: 20px !important; left: auto !important; }
+      html[dir="ltr"] .whatsapp-float, html:not([dir]) .whatsapp-float { left: 20px !important; right: auto !important; }
+      html[dir="rtl"] #mic-access-tool-general-button, html[dir="rtl"] .mic-access-tool-general-button,
+      html[dir="rtl"] #mic-init-access-tool .mic-access-tool-general-button,
+      html[dir="rtl"] #mic-init-access-tool #mic-access-tool-general-button,
+      html[dir="rtl"] ._access-icon { left: 20px !important; right: auto !important; }
+      html[dir="ltr"] #mic-access-tool-general-button, html[dir="ltr"] .mic-access-tool-general-button,
+      html[dir="ltr"] #mic-init-access-tool .mic-access-tool-general-button,
+      html[dir="ltr"] #mic-init-access-tool #mic-access-tool-general-button,
+      html[dir="ltr"] ._access-icon,
+      html:not([dir]) #mic-access-tool-general-button, html:not([dir]) .mic-access-tool-general-button,
+      html:not([dir]) #mic-init-access-tool .mic-access-tool-general-button,
+      html:not([dir]) #mic-init-access-tool #mic-access-tool-general-button,
+      html:not([dir]) ._access-icon { right: 20px !important; left: auto !important; }
+      @media (max-width: 768px) { .whatsapp-float { display: flex !important; } }
+      @media (min-width: 769px) { .whatsapp-float { display: flex !important; } }
+      @media (max-width: 768px) {
+        #mic-access-tool-general-button, .mic-access-tool-general-button,
+        #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
+        ._access-icon, #mic-access-tool-box, .mic-access-tool-box,
+        #mic-init-access-tool #mic-access-tool-box, div[id*="mic-access-tool-box"], ._access-menu {
+          display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;
+        }
+      }
+      @media (min-width: 769px) {
+        #mic-access-tool-general-button, .mic-access-tool-general-button,
+        #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
+        ._access-icon, #mic-access-tool-box, .mic-access-tool-box,
+        #mic-init-access-tool #mic-access-tool-box, div[id*="mic-access-tool-box"], ._access-menu {
+          display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;
+        }
       }
     </style>
 </head>
@@ -643,7 +670,7 @@
   <div class="nav-container">
     <div class="nav-right-group"><div class="nav-brand">
       <a href="/" class="logo-link">
-        <img src="/assets/logo.webp" alt="אקו מתכות" class="logo">
+        <img src="/assets/logo.webp" alt="א.מ פסולת מתכות בע&quot;מ" class="logo">
       </a>
     </div><ul class="nav-menu" id="navMenu"><li><a href="/materials">חומרים מקובלים</a></li><li><a href="/about">אודות</a></li></ul></div>
 
@@ -1573,7 +1600,7 @@
 
       <!-- Column 1: Company Info -->
       <div class="footer-col footer-brand">
-        <img src="/assets/logo.webp" alt="אקו מתכות" class="logo" data-element-type="image" data-element-id="img-1777901048512-d3kwgu2sy" data-zappy-footer-image="true">
+        <img src="/assets/logo.webp" alt="א.מ פסולת מתכות בע&quot;מ" class="logo" data-element-type="image" data-element-id="img-1777901048512-d3kwgu2sy" data-zappy-footer-image="true">
         <p class="footer-tagline">מובילים בתחום מחזור מתכות ופסולת אלקטרונית בישראל. שירות אמין, אחראי וידידותי לסביבה לעסקים, תעשייה ורשויות מקומיות.</p>
         <div class="footer-social">
           <a href="https://facebook.com/eco" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>

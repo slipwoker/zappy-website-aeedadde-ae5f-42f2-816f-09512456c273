@@ -223,6 +223,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="מוכנים להיפטר מהפסולת? דברו איתנו — אקו מתכות">
     <meta name="twitter:description" content="צרו קשר עם צוות אקו מתכות עוד היום ותקבלו פתרון מחזור מותאם אישית לעסק, לרשות המקומית או למפעל שלכם. אנחנו כאן לענות, לאסוף ולטפל — מהר ובמקצועיות.">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"LocalBusiness","@id":"https://eco-metachot.zappy5.app#organization","name":"א.מ פסולת מתכות בע\"מ","url":"https://eco-metachot.zappy5.app","description":"A metal and electronic equipment recycling company operating in Israel. The business focuses on eco-friendly recycling solutions, collecting and processing scrap metals and electronic waste (e-waste). The brand aims for a modern, clean aesthetic with a professional and trustworthy feel. The website should include a homepage video, light explanatory content, a contact section, and a clear display of recyclable materials accepted.","address":{"@type":"PostalAddress","streetAddress":"Israel, Tel Aviv"},"contactPoint":[{"@type":"ContactPoint","contactType":"customer service","email":"eco@eco.co.il","telephone":"+97255555555"}]},{"@type":"WebSite","@id":"https://eco-metachot.zappy5.app#website","url":"https://eco-metachot.zappy5.app","name":"א.מ פסולת מתכות בע\"מ","publisher":{"@id":"https://eco-metachot.zappy5.app#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://eco-metachot.zappy5.app"},{"@type":"ListItem","position":2,"name":"Contact","item":"https://eco-metachot.zappy5.app/contact"}]},{"@type":"ContactPage","@id":"https://eco-metachot.zappy5.app/contact#contactpage","url":"https://eco-metachot.zappy5.app/contact","name":"מוכנים להיפטר מהפסולת? דברו איתנו — אקו מתכות","mainEntity":{"@id":"https://eco-metachot.zappy5.app#organization"},"potentialAction":{"@type":"CommunicateAction","target":{"@type":"EntryPoint","urlTemplate":"https://eco-metachot.zappy5.app/api/email/contact-form","actionPlatform":["http/method=POST"],"contentType":"application/json"},"instrument":[{"@type":"PropertyValue","name":"name","propertyID":"text","valueRequired":true,"description":"ישראל ישראלי"},{"@type":"PropertyValue","name":"phone","propertyID":"tel","valueRequired":true,"description":"050-0000000"},{"@type":"PropertyValue","name":"email","propertyID":"email","valueRequired":true,"description":"name@company.co.il"},{"@type":"PropertyValue","name":"message","propertyID":"textarea","valueRequired":true,"description":"תארו את סוג החומר, הכמות המשוערת, ומיקום האיסוף..."},{"@type":"PropertyValue","name":"privacy_consent","propertyID":"checkbox","valueRequired":true}]}}]}</script>
     <meta property="og:type" content="website">
   <meta property="og:locale" content="he_IL">
   
@@ -298,11 +299,37 @@
     </style>
 
     <style id="zappy-widget-visibility">
-      #mic-access-tool-general-button, .mic-access-tool-general-button,
-      #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
-      ._access-icon, #mic-access-tool-box, .mic-access-tool-box,
-      #mic-init-access-tool #mic-access-tool-box, div[id*="mic-access-tool-box"], ._access-menu {
-        display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;
+      html[dir="rtl"] .whatsapp-float { right: 20px !important; left: auto !important; }
+      html[dir="ltr"] .whatsapp-float, html:not([dir]) .whatsapp-float { left: 20px !important; right: auto !important; }
+      html[dir="rtl"] #mic-access-tool-general-button, html[dir="rtl"] .mic-access-tool-general-button,
+      html[dir="rtl"] #mic-init-access-tool .mic-access-tool-general-button,
+      html[dir="rtl"] #mic-init-access-tool #mic-access-tool-general-button,
+      html[dir="rtl"] ._access-icon { left: 20px !important; right: auto !important; }
+      html[dir="ltr"] #mic-access-tool-general-button, html[dir="ltr"] .mic-access-tool-general-button,
+      html[dir="ltr"] #mic-init-access-tool .mic-access-tool-general-button,
+      html[dir="ltr"] #mic-init-access-tool #mic-access-tool-general-button,
+      html[dir="ltr"] ._access-icon,
+      html:not([dir]) #mic-access-tool-general-button, html:not([dir]) .mic-access-tool-general-button,
+      html:not([dir]) #mic-init-access-tool .mic-access-tool-general-button,
+      html:not([dir]) #mic-init-access-tool #mic-access-tool-general-button,
+      html:not([dir]) ._access-icon { right: 20px !important; left: auto !important; }
+      @media (max-width: 768px) { .whatsapp-float { display: flex !important; } }
+      @media (min-width: 769px) { .whatsapp-float { display: flex !important; } }
+      @media (max-width: 768px) {
+        #mic-access-tool-general-button, .mic-access-tool-general-button,
+        #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
+        ._access-icon, #mic-access-tool-box, .mic-access-tool-box,
+        #mic-init-access-tool #mic-access-tool-box, div[id*="mic-access-tool-box"], ._access-menu {
+          display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;
+        }
+      }
+      @media (min-width: 769px) {
+        #mic-access-tool-general-button, .mic-access-tool-general-button,
+        #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
+        ._access-icon, #mic-access-tool-box, .mic-access-tool-box,
+        #mic-init-access-tool #mic-access-tool-box, div[id*="mic-access-tool-box"], ._access-menu {
+          display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;
+        }
       }
     </style>
 </head>
@@ -327,7 +354,7 @@
   <div class="nav-container">
     <div class="nav-right-group"><div class="nav-brand">
       <a href="/" class="logo-link">
-        <img src="/assets/logo.webp" alt="אקו מתכות" class="logo">
+        <img src="/assets/logo.webp" alt="א.מ פסולת מתכות בע&quot;מ" class="logo">
       </a>
     </div><ul class="nav-menu" id="navMenu"><li><a href="/materials">חומרים מקובלים</a></li><li><a href="/about">אודות</a></li></ul></div>
 
@@ -785,7 +812,7 @@
     <!-- Top intro block -->
     <div class="cci-intro-block">
       <span class="cci-reassurance-line">מענה מקצועי · איסוף גמיש · תיאום מהיר</span>
-      <h1 class="cci-heading">בואו נדבר על<br><span class="cci-heading-accent">מחזור מתכות</span></h1>
+      <h1 class="cci-heading">א.מ פסולת מתכות בע"מ</h1>
       <p class="cci-subheading">אנו מתמחים בפתרונות מחזור מתכות וציוד אלקטרוני לתעשייה, לרשויות מקומיות ולמגזר הציבורי. נשמח לתאם איסוף, לבנות הסדרים חוזרים, ולהציע מענה מקצועי המותאם לצרכים שלכם.</p>
     </div>
 
@@ -1201,7 +1228,7 @@
 
       <!-- Column 1: Company Info -->
       <div class="footer-col footer-brand">
-        <img src="/assets/logo.webp" alt="אקו מתכות" class="logo" data-element-type="image" data-element-id="img-1777901048512-d3kwgu2sy" data-zappy-footer-image="true">
+        <img src="/assets/logo.webp" alt="א.מ פסולת מתכות בע&quot;מ" class="logo" data-element-type="image" data-element-id="img-1777901048512-d3kwgu2sy" data-zappy-footer-image="true">
         <p class="footer-tagline">מובילים בתחום מחזור מתכות ופסולת אלקטרונית בישראל. שירות אמין, אחראי וידידותי לסביבה לעסקים, תעשייה ורשויות מקומיות.</p>
         <div class="footer-social">
           <a href="https://facebook.com/eco" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -1232,7 +1259,7 @@
             <span class="contact-icon"><i class="fas fa-phone" data-element-type="icon" data-element-id="icon-1777901048510-r70f58koy" data-icon-type="fontawesome"></i></span>
             <span class="contact-text"><a href="tel:+97255555555">+97255555555</a></span>
           </li>
-          <li><a href="/" style="display:flex;align-items:flex-start;gap:inherit"><span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
+          <li><a href="/"><span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
             <span class="contact-text">Israel, Tel Aviv</span></a></li>
         </ul>
       </div>

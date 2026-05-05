@@ -1,4 +1,4 @@
-# אקו מתכות — Generative Engine Optimization Map
+# א.מ פסולת מתכות בע"מ — Generative Engine Optimization Map
 
 > A metal and electronic equipment recycling company operating in Israel. The business focuses on eco-friendly recycling solutions, collecting and processing scrap metals and electronic waste (e-waste). The brand aims for a modern, clean aesthetic with a professional and trustworthy feel. The website should include a homepage video, light explanatory content, a contact section, and a clear display of recyclable materials accepted.
 
@@ -61,7 +61,7 @@ Information about WCAG compliance and accessibility features.
 
 # Business Context (for LLM understanding)
 
-## About אקו מתכות
+## About א.מ פסולת מתכות בע"מ
 A metal and electronic equipment recycling company operating in Israel. The business focuses on eco-friendly recycling solutions, collecting and processing scrap metals and electronic waste (e-waste). The brand aims for a modern, clean aesthetic with a professional and trustworthy feel. The website should include a homepage video, light explanatory content, a contact section, and a clear display of recyclable materials accepted.
 
 ## Target Audience
