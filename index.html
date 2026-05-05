@@ -1264,7 +1264,7 @@ body.zl-loading {
 </script>
   
   <main>
-    <section class="index-hero-section" data-layout-spec="בית-hero" dir="rtl" data-hero-type="fullscreen-scrim" data-zappy-section="true" id="index-hero-section" data-zappy-animate="slide-up" data-zappy-anim-duration="0.7s" data-zappy-anim-delay="0s">
+    <section class="index-hero-section" data-layout-spec="בית-hero" dir="rtl" data-hero-type="fullscreen-scrim" data-zappy-section="true" id="index-hero-section" >
   <!-- Background Image -->
   <div class="index-hero-bg" style="background-image: url('assets/site-index-hero-image-1.webp'); background-size: cover; background-position: center;"></div>
 
@@ -1328,7 +1328,7 @@ body.zl-loading {
   </div>
 </section>
 
-<section class="index-capabilities-section" data-layout-spec="בית-capabilities" dir="rtl" id="index-capabilities-section" data-zappy-animate="slide-up" data-zappy-anim-duration="0.7s" data-zappy-anim-delay="0.1s">
+<section class="index-capabilities-section" data-layout-spec="בית-capabilities" dir="rtl" id="index-capabilities-section" >
   <!-- Decorative dot grid -->
   <div class="cap-dot-grid" aria-hidden="true"></div>
 
@@ -1414,7 +1414,7 @@ body.zl-loading {
   </div>
 </section>
 
-<section class="index-materials-section" data-layout-spec="בית-materials" dir="rtl" id="index-materials-section" data-zappy-animate="slide-up" data-zappy-anim-duration="0.7s" data-zappy-anim-delay="0.2s">
+<section class="index-materials-section" data-layout-spec="בית-materials" dir="rtl" id="index-materials-section" >
   <div class="index-materials-container">
 
     <!-- Intro Block -->
@@ -1564,7 +1564,7 @@ body.zl-loading {
 
 </section>
 
-<section class="index-process-section" data-layout-spec="בית-process" dir="rtl" id="index-process-section" data-zappy-animate="slide-up" data-zappy-anim-duration="0.7s" data-zappy-anim-delay="0.30000000000000004s">
+<section class="index-process-section" data-layout-spec="בית-process" dir="rtl" id="index-process-section" >
   <!-- Decorative watermark -->
   <div class="process-watermark" aria-hidden="true">
     <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1694,7 +1694,7 @@ body.zl-loading {
   </div>
 </section>
 
-<section class="index-cta-section" data-layout-spec="בית-cta" dir="rtl" data-zappy-animate="slide-up" data-zappy-anim-duration="0.7s" data-zappy-anim-delay="0.4s">
+<section class="index-cta-section" data-layout-spec="בית-cta" dir="rtl" >
   <!-- Decorative lime accent bar -->
   <div class="index-cta-accent-bar" aria-hidden="true"></div>
 
@@ -1827,27 +1827,115 @@ body.zl-loading {
     <i class="fab fa-whatsapp"></i>
   </a>
   
-  <div data-integration="accessibility:toolbar"></div>
-<script data-zappy-animation-observer="">(function() {
-  if (window.__zappyAnimObserver) return;
-  var observer = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-      if (entry.isIntersecting) {
-        var el = entry.target;
-        var anim = el.getAttribute('data-zappy-animate');
-        var dur = el.getAttribute('data-zappy-anim-duration') || '0.6s';
-        var del = el.getAttribute('data-zappy-anim-delay') || '0s';
-        el.style.animation = 'zappy-' + anim + ' ' + dur + ' ' + del + ' ease forwards';
-        el.classList.add('zappy-animated');
-        observer.unobserve(el);
-      }
+  <style>
+/* ── Scroll Reveal Base ── */
+.sr-hidden {
+  opacity: 0;
+  transform: translateY(48px);
+  transition: opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1), transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+.sr-hidden-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+.sr-hidden-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+.sr-visible {
+  opacity: 1 !important;
+  transform: none !important;
+}
+/* Stagger delays */
+.sr-d1 { transition-delay: 0.05s; }
+.sr-d2 { transition-delay: 0.15s; }
+.sr-d3 { transition-delay: 0.25s; }
+.sr-d4 { transition-delay: 0.35s; }
+.sr-d5 { transition-delay: 0.45s; }
+.sr-d6 { transition-delay: 0.55s; }
+</style>
+<script>
+(function() {
+  function initScrollReveal() {
+    // ── Section headings & labels ──
+    var headings = document.querySelectorAll(
+      '.cap-label, .cap-heading, .cap-desc, ' +
+      '.index-materials-label, .index-materials-heading, .index-materials-subtext, ' +
+      '.process-label, .process-title, .process-intro h3, ' +
+      '.index-cta-eyebrow, .index-cta-heading, .index-cta-desc'
+    );
+    headings.forEach(function(el, i) {
+      el.classList.add('sr-hidden');
+      if (i % 3 === 0) el.classList.add('sr-d1');
+      else if (i % 3 === 1) el.classList.add('sr-d2');
+      else el.classList.add('sr-d3');
     });
-  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
-  document.querySelectorAll('[data-zappy-animate]').forEach(function(el) {
-    observer.observe(el);
-  });
-  window.__zappyAnimObserver = observer;
-})();</script>
+
+    // ── Capabilities list items ──
+    var capItems = document.querySelectorAll('.cap-strength-item');
+    capItems.forEach(function(el, i) {
+      el.classList.add('sr-hidden');
+      el.classList.add(['sr-d1','sr-d2','sr-d3','sr-d4'][i] || 'sr-d4');
+    });
+
+    // ── Capabilities visual column ──
+    var capVisual = document.querySelector('.cap-visual-col');
+    if (capVisual) capVisual.classList.add('sr-hidden-right');
+
+    // ── Materials cards ──
+    var matCards = document.querySelectorAll('.index-material-card');
+    matCards.forEach(function(el, i) {
+      el.classList.add('sr-hidden');
+      el.classList.add(['sr-d1','sr-d2','sr-d3','sr-d4','sr-d5','sr-d6'][i] || 'sr-d6');
+    });
+
+    // ── Process steps ──
+    var steps = document.querySelectorAll('.process-step');
+    steps.forEach(function(el, i) {
+      el.classList.add('sr-hidden');
+      el.classList.add(['sr-d1','sr-d2','sr-d3','sr-d4'][i] || 'sr-d4');
+    });
+
+    // ── Process image ──
+    var procImg = document.querySelector('.process-image-tile');
+    if (procImg) { procImg.classList.add('sr-hidden-left'); }
+
+    // ── CTA actions & trust ──
+    var ctaActions = document.querySelector('.index-cta-actions');
+    var ctaTrust = document.querySelector('.index-cta-trust');
+    if (ctaActions) { ctaActions.classList.add('sr-hidden'); ctaActions.classList.add('sr-d4'); }
+    if (ctaTrust)   { ctaTrust.classList.add('sr-hidden');   ctaTrust.classList.add('sr-d5'); }
+
+    // ── IntersectionObserver ──
+    var io = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('sr-visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+
+    document.querySelectorAll('.sr-hidden, .sr-hidden-left, .sr-hidden-right').forEach(function(el) {
+      io.observe(el);
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initScrollReveal);
+  } else {
+    initScrollReveal();
+  }
+})();
+</script>
+
+    <div data-integration="accessibility:toolbar"></div>
+
     <script src="/script.js"></script>
 
     <script id="zappy-mobile-submenu-script">

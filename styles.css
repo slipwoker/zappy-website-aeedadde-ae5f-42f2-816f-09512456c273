@@ -9000,17 +9000,234 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
 /* /Zappy custom logo size */
 
 
-@keyframes zappy-fade-in { from { opacity: 0; } to { opacity: 1; } }
-@keyframes zappy-slide-up { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
-@keyframes zappy-slide-left { from { opacity: 0; transform: translateX(-30px); } to { opacity: 1; transform: translateX(0); } }
-@keyframes zappy-slide-right { from { opacity: 0; transform: translateX(30px); } to { opacity: 1; transform: translateX(0); } }
-@keyframes zappy-zoom-in { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
-@keyframes zappy-bounce { 0% { opacity: 0; transform: translateY(30px); } 60% { opacity: 1; transform: translateY(-5px); } 100% { transform: translateY(0); } }
-@keyframes zappy-flip { from { opacity: 0; transform: perspective(400px) rotateY(90deg); } to { opacity: 1; transform: perspective(400px) rotateY(0); } }
-@keyframes zappy-rotate-in { from { opacity: 0; transform: rotate(-10deg) scale(0.95); } to { opacity: 1; transform: rotate(0) scale(1); } }
-[data-zappy-animate] { opacity: 0; }
-[data-zappy-animate].zappy-animated { opacity: 1; }
+to { opacity: 1; } }
+to { opacity: 1; transform: translateY(0); } }
+to { opacity: 1; transform: translateX(0); } }
+to { opacity: 1; transform: translateX(0); } }
+to { opacity: 1; transform: scale(1); } }
+60% { opacity: 1; transform: translateY(-5px); } 100% { transform: translateY(0); } }
+to { opacity: 1; transform: perspective(400px) rotateY(0); } }
+to { opacity: 1; transform: rotate(0) scale(1); } }
+.index-materials-section .index-material-card {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
 
+.index-materials-section .index-material-card.zappy-in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.index-materials-section .index-material-card:nth-child(1) {
+  transition-delay: 0.05s;
+}
+
+.index-materials-section .index-material-card:nth-child(2) {
+  transition-delay: 0.15s;
+}
+
+.index-materials-section .index-material-card:nth-child(3) {
+  transition-delay: 0.25s;
+}
+
+.index-materials-section .index-material-card:nth-child(4) {
+  transition-delay: 0.35s;
+}
+
+.index-materials-section .index-material-card:nth-child(5) {
+  transition-delay: 0.45s;
+}
+
+.index-materials-section .index-material-card:nth-child(6) {
+  transition-delay: 0.55s;
+}
+
+.index-process-section .process-step {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 0.65s ease, transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.index-process-section .process-step.zappy-in-view {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.index-process-section .process-step:nth-child(1) {
+  transition-delay: 0.05s;
+}
+
+.index-process-section .process-step:nth-child(2) {
+  transition-delay: 0.18s;
+}
+
+.index-process-section .process-step:nth-child(3) {
+  transition-delay: 0.31s;
+}
+
+.index-process-section .process-step:nth-child(4) {
+  transition-delay: 0.44s;
+}
+
+.index-capabilities-section .cap-strength-item {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.55s ease, transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.index-capabilities-section .cap-strength-item.zappy-in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.index-capabilities-section .cap-strength-item:nth-child(1) {
+  transition-delay: 0.05s;
+}
+
+.index-capabilities-section .cap-strength-item:nth-child(2) {
+  transition-delay: 0.18s;
+}
+
+.index-capabilities-section .cap-strength-item:nth-child(3) {
+  transition-delay: 0.31s;
+}
+
+.index-capabilities-section .cap-strength-item:nth-child(4) {
+  transition-delay: 0.44s;
+}
+
+.index-capabilities-section .cap-heading,
+.index-capabilities-section .cap-desc,
+.index-capabilities-section .cap-label {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.index-capabilities-section .cap-heading.zappy-in-view,
+.index-capabilities-section .cap-desc.zappy-in-view,
+.index-capabilities-section .cap-label.zappy-in-view {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.index-capabilities-section .cap-label {
+  transition-delay: 0.05s;
+}
+
+.index-capabilities-section .cap-heading {
+  transition-delay: 0.15s;
+}
+
+.index-capabilities-section .cap-desc {
+  transition-delay: 0.25s;
+}
+
+.index-process-section .process-image-tile {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: 0.2s;
+}
+
+.index-process-section .process-image-tile.zappy-in-view {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.index-process-section .process-title,
+.index-process-section .process-intro,
+.index-process-section .process-label {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.55s ease, transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.index-process-section .process-title.zappy-in-view,
+.index-process-section .process-intro.zappy-in-view,
+.index-process-section .process-label.zappy-in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.index-process-section .process-label {
+  transition-delay: 0.05s;
+}
+
+.index-process-section .process-title {
+  transition-delay: 0.15s;
+}
+
+.index-process-section .process-intro {
+  transition-delay: 0.25s;
+}
+
+.index-cta-section .index-cta-eyebrow,
+.index-cta-section .index-cta-heading,
+.index-cta-section .index-cta-desc,
+.index-cta-section .index-cta-actions,
+.index-cta-section .index-cta-trust {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.55s ease, transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.index-cta-section .index-cta-eyebrow.zappy-in-view,
+.index-cta-section .index-cta-heading.zappy-in-view,
+.index-cta-section .index-cta-desc.zappy-in-view,
+.index-cta-section .index-cta-actions.zappy-in-view,
+.index-cta-section .index-cta-trust.zappy-in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.index-cta-section .index-cta-eyebrow {
+  transition-delay: 0.05s;
+}
+
+.index-cta-section .index-cta-heading {
+  transition-delay: 0.15s;
+}
+
+.index-cta-section .index-cta-desc {
+  transition-delay: 0.25s;
+}
+
+.index-cta-section .index-cta-actions {
+  transition-delay: 0.35s;
+}
+
+.index-cta-section .index-cta-trust {
+  transition-delay: 0.45s;
+}
+
+.index-materials-section .index-materials-heading,
+.index-materials-section .index-materials-subtext,
+.index-materials-section .index-materials-label {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.55s ease, transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.index-materials-section .index-materials-heading.zappy-in-view,
+.index-materials-section .index-materials-subtext.zappy-in-view,
+.index-materials-section .index-materials-label.zappy-in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.index-materials-section .index-materials-label {
+  transition-delay: 0.05s;
+}
+
+.index-materials-section .index-materials-heading {
+  transition-delay: 0.15s;
+}
+
+.index-materials-section .index-materials-subtext {
+  transition-delay: 0.25s;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
