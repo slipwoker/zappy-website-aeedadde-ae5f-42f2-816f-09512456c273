@@ -9455,6 +9455,214 @@ button[type='submit'], .btn, .cta-btn,
   color: var(--secondary) !important;
 }
 
+
+.navbar {
+  overflow: visible !important;
+}
+
+.navbar .dropdown-menu {
+  z-index: 99999 !important;
+  position: absolute !important;
+}
+
+.nav-container,
+.nav-right-group,
+.nav-menu,
+.nav-dropdown {
+  overflow: visible !important;
+}
+
+.navbar .dropdown-menu {
+  background: rgba(20, 22, 26, 0.97) !important;
+  backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(199, 241, 26, 0.15) !important;
+  border-radius: 10px !important;
+  box-shadow: 0 16px 48px rgba(0,0,0,0.6), 0 0 0 1px rgba(199,241,26,0.08) !important;
+  min-width: 200px !important;
+  padding: 8px 0 !important;
+  margin-top: 8px !important;
+}
+
+.navbar .dropdown-menu li a {
+  padding: 10px 20px !important;
+  color: var(--text-light) !important;
+  font-size: 0.9rem !important;
+  transition: color 0.2s ease, background 0.2s ease, padding 0.2s ease !important;
+  display: block !important;
+  border-radius: 6px !important;
+  margin: 2px 6px !important;
+}
+
+.navbar .dropdown-menu li a:hover {
+  color: var(--secondary) !important;
+  background: rgba(199, 241, 26, 0.08) !important;
+  padding-right: 26px !important;
+}
+
+.navbar .dropdown-menu li a::after {
+  content: '';
+  display: none !important;
+}
+
+.navbar .nav-menu > li > a {
+  color: var(--text-light) !important;
+}
+
+.navbar .nav-menu > .nav-item > a {
+  color: var(--text-light) !important;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: var(--text-light) !important;
+}
+
+.navbar .dropdown-menu .dropdown-item {
+  color: var(--text-light) !important;
+}
+
+.navbar .sub-menu li a {
+  color: var(--text-light) !important;
+}
+
+.navbar .nav-menu .sub-menu a {
+  color: var(--text-light) !important;
+}
+
+.navbar .nav-menu .sub-menu li a {
+  color: var(--text-light) !important;
+}
+
+.navbar .zappy-products-dropdown .sub-menu a {
+  color: var(--text-light) !important;
+}
+
+nav.navbar .sub-menu li a {
+  color: var(--text-light) !important;
+}
+
+.navbar .nav-search-box .nav-search-input {
+  color: var(--text-light) !important;
+}
+
+.navbar .cart-link.nav-cart {
+  color: var(--text-light) !important;
+}
+
+.navbar .login-link.nav-login {
+  color: var(--text-light) !important;
+}
+
+.navbar .cart-link.nav-cart svg {
+  color: var(--text-light) !important;
+}
+
+.navbar .login-link.nav-login svg {
+  color: var(--text-light) !important;
+}
+
+.navbar.scrolled ~ .zappy-catalog-menu .catalog-menu-item {
+  color: var(--text-light) !important;
+}
+
+.navbar.scrolled ~ .zappy-catalog-menu .catalog-menu-all {
+  color: var(--text-light) !important;
+}
+
+.navbar.scrolled ~ #zappy-catalog-menu .catalog-menu-item {
+  color: var(--text-light) !important;
+}
+
+.navbar.scrolled ~ #zappy-catalog-menu .catalog-menu-all {
+  color: var(--text-light) !important;
+}
+
+.navbar.scrolled .nav-menu > li > a {
+  color: var(--text-light) !important;
+}
+
+.navbar.scrolled .nav-menu > .nav-item > a {
+  color: var(--text-light) !important;
+}
+
+.navbar.scrolled .nav-link {
+  color: var(--text-light) !important;
+}
+
+.navbar.scrolled a:not(.nav-cta-btn) {
+  color: var(--text-light) !important;
+}
+
+.navbar.scrolled .navbar-brand {
+  color: var(--text-light) !important;
+}
+
+.navbar.scrolled .navbar-brand a {
+  color: var(--text-light) !important;
+}
+
+.navbar.scrolled .dropdown-toggle {
+  color: var(--text-light) !important;
+}
+
+.navbar.scrolled .mobile-hamburger-btn {
+  color: var(--text-light) !important;
+}
+
+.navbar.scrolled .mobile-close-btn {
+  color: var(--text-light) !important;
+}
+
+.navbar.scrolled .phone-header-btn {
+  color: var(--text-light) !important;
+}
+
+.navbar.scrolled .mobile-toggle {
+  color: var(--text-light) !important;
+}
+
+.navbar.scrolled .mobile-toggle svg {
+  color: var(--text-light) !important;
+}
+
+.navbar.scrolled .mobile-hamburger-btn svg {
+  color: var(--text-light) !important;
+}
+
+.navbar.scrolled .mobile-close-btn svg {
+  color: var(--text-light) !important;
+}
+
+.navbar.scrolled .phone-header-btn svg {
+  color: var(--text-light) !important;
+}
+
+.navbar.scrolled .navbar-brand svg {
+  color: var(--text-light) !important;
+}
+
+.navbar.scrolled .logo-link svg {
+  color: var(--text-light) !important;
+}
+
+.navbar.scrolled .nav-search-btn {
+  color: var(--text-light) !important;
+}
+
+.navbar.scrolled .cart-link.nav-cart {
+  color: var(--text-light) !important;
+}
+
+.navbar.scrolled .login-link.nav-login {
+  color: var(--text-light) !important;
+}
+
+.navbar.scrolled .nav-search-toggle {
+  color: var(--text-light) !important;
+}
+
+.navbar.scrolled .search-toggle {
+  color: var(--text-light) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
