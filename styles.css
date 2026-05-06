@@ -9325,6 +9325,136 @@ to { opacity: 1; transform: rotate(0) scale(1); } }
   border-right: 1px solid rgba(199, 241, 26, 0.18);
   transform: rotate(-45deg);
 }
+/* Batch: אפקטי hover מרשימים לכל הכפתורים */
+/* ── Button Hover Effects ── */
+.index-hero-btn-primary, .index-hero-btn-secondary,
+.index-cta-btn-primary, .index-cta-btn-secondary,
+.nav-cta-btn, a.nav-cta-btn,
+.cap-cta-btn, .materials-cta-btn, .contact-submit-btn,
+button[type='submit'], .btn, .cta-btn,
+.hero-cta-primary, .hero-cta-secondary {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.25s cubic-bezier(0.4,0,0.2,1), box-shadow 0.25s ease, background 0.25s ease, color 0.25s ease !important;
+}
+.index-hero-btn-primary::after, .index-cta-btn-primary::after, .nav-cta-btn::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.18) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  border-radius: inherit;
+}
+.index-hero-btn-primary:hover::after, .index-cta-btn-primary:hover::after, .nav-cta-btn:hover::after {
+  opacity: 1;
+}
+.index-hero-btn-primary:hover, .index-cta-btn-primary:hover, .nav-cta-btn:hover {
+  transform: translateY(-3px) scale(1.03) !important;
+  box-shadow: 0 14px 40px rgba(199,241,26,0.5) !important;
+}
+.index-hero-btn-secondary:hover, .index-cta-btn-secondary:hover {
+  transform: translateY(-2px) scale(1.02) !important;
+}
+.index-hero-btn-primary:active, .index-cta-btn-primary:active, .nav-cta-btn:active {
+  transform: translateY(0) scale(0.98) !important;
+  transition-duration: 0.1s !important;
+}
+/* Batch: אנימציות לכרטיסים, אייקונים ואלמנטים בכל האתר */
+/* ── Card Hover Lift ── */
+.index-material-card, .cap-strength-item, .process-step, .materials-card, .about-card, .contact-card, .value-card, .team-card, .service-card {
+  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1), box-shadow 0.3s ease !important;
+  cursor: default;
+}
+.index-material-card:hover, .cap-strength-item:hover, .process-step:hover, .materials-card:hover, .about-card:hover, .value-card:hover, .service-card:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 20px 48px rgba(0,0,0,0.45), 0 0 0 1px rgba(199,241,26,0.12) !important;
+}
+
+/* ── Icon Spin on Hover ── */
+.cap-badge, .step-icon-wrap, .index-material-icon-wrap, .eco-icon, .footer-social a {
+  transition: transform 0.4s cubic-bezier(0.34,1.56,0.64,1), color 0.3s ease, background 0.3s ease !important;
+}
+.cap-badge:hover, .step-icon-wrap:hover, .index-material-icon-wrap:hover {
+  transform: rotate(8deg) scale(1.15) !important;
+}
+.footer-social a:hover {
+  transform: translateY(-4px) scale(1.2) !important;
+}
+
+/* ── Nav Links Underline Slide ── */
+.nav-menu a, .footer-links a, .footer-contact a {
+  position: relative;
+  transition: color 0.25s ease !important;
+}
+.nav-menu a::after, .footer-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background: var(--secondary);
+  transition: width 0.3s cubic-bezier(0.4,0,0.2,1);
+  border-radius: 2px;
+}
+.nav-menu a:hover::after, .footer-links a:hover::after {
+  width: 100%;
+}
+
+/* ── Pulse on Label Badges ── */
+.index-hero-label, .process-label, .cap-label, .index-materials-label, .index-cta-eyebrow {
+  animation: zappy-badge-pulse 3s ease-in-out infinite;
+}
+@keyframes zappy-badge-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(199,241,26,0.0); }
+  50% { box-shadow: 0 0 0 6px rgba(199,241,26,0.12); }
+}
+
+/* ── Floating image tile ── */
+.cap-main-tile, .process-image-frame {
+  animation: zappy-float 4s ease-in-out infinite;
+}
+@keyframes zappy-float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+/* ── Number badge pop ── */
+.step-number, .cap-badge {
+  transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1), color 0.3s ease !important;
+}
+.process-step:hover .step-number, .cap-strength-item:hover .cap-badge {
+  transform: scale(1.25) !important;
+  color: var(--secondary) !important;
+}
+
+/* ── Smooth image zoom on hover ── */
+.index-material-card img, .cap-main-tile img, .process-image-tile img, .about-img img, [data-element-id] img {
+  transition: transform 0.5s cubic-bezier(0.4,0,0.2,1) !important;
+}
+.index-material-card:hover img, .cap-main-tile:hover img {
+  transform: scale(1.04) !important;
+}
+
+/* ── CTA Trust items bounce in ── */
+.index-cta-trust-item {
+  transition: transform 0.25s cubic-bezier(0.34,1.56,0.64,1) !important;
+}
+.index-cta-trust-item:hover {
+  transform: translateX(-4px) scale(1.05) !important;
+}
+
+/* ── Approval panel items ── */
+.cap-approval-list li {
+  transition: transform 0.25s ease, color 0.25s ease !important;
+}
+.cap-approval-list li:hover {
+  transform: translateX(-4px) !important;
+  color: var(--secondary) !important;
+}
+
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
