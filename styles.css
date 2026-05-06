@@ -9240,6 +9240,91 @@ to { opacity: 1; transform: rotate(0) scale(1); } }
 [data-zappy-animate] { opacity: 0; }
 [data-zappy-animate].zappy-animated { opacity: 1; }
 
+
+.navbar .nav-menu .nav-dropdown {
+  position: relative;
+}
+
+.navbar .nav-menu .nav-dropdown > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.navbar .nav-menu .nav-dropdown .dropdown-arrow {
+  display: inline-block;
+  transition: transform 0.25s ease;
+  flex-shrink: 0;
+}
+
+.navbar .nav-menu .nav-dropdown:hover .dropdown-arrow,
+.navbar .nav-menu .nav-dropdown.open .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.navbar .nav-menu .dropdown-menu {
+  position: absolute;
+  top: calc(100% + 12px);
+  inset-inline-end: 0;
+  min-width: 200px;
+  background: #1C1F24;
+  border: 1px solid rgba(199, 241, 26, 0.18);
+  border-radius: 10px;
+  padding: 8px 0;
+  list-style: none;
+  margin: 0;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.55);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s ease;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.navbar .nav-menu .nav-dropdown:hover .dropdown-menu,
+.navbar .nav-menu .nav-dropdown.open .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.navbar .nav-menu .dropdown-menu li {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .nav-menu .dropdown-menu li a {
+  display: block;
+  padding: 10px 20px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text-light);
+  text-decoration: none;
+  white-space: nowrap;
+  border-right: 3px solid transparent;
+  transition: all 0.18s ease;
+}
+
+.navbar .nav-menu .dropdown-menu li a:hover {
+  background: rgba(199, 241, 26, 0.08);
+  color: var(--secondary-color);
+}
+
+.navbar .nav-menu .dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  inset-inline-end: 18px;
+  width: 10px;
+  height: 10px;
+  background: #1C1F24;
+  border-top: 1px solid rgba(199, 241, 26, 0.18);
+  border-right: 1px solid rgba(199, 241, 26, 0.18);
+  transform: rotate(-45deg);
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
